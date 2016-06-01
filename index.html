@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey about You!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Let's learn about You!</h2>
+      </div>
+
+      <div id="survey">
+        <form>
+          <div class="form-group">
+            <label for="name">What's your name?</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="born">When were you born?</label>
+            <input id="born" class="form-control" type="date" >
+          </div>
+          <div class="form-group">
+            <label for="color">What's your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <div class="form-group">
+            <label for="food">Which is your favorite food?</label>
+            <select class="form-control" id="food">
+              <option></option>
+              <option>tacos</option>
+              <option>pizza</option>
+              <option>burgers</option>
+              <option>chow mein</option>
+              <option>sushi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="superhero">Please pick your favorite Superhero!</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="superhero" value="Spiderman" checked>
+                Spiderman
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="superhero" value="Superman">
+                Superman
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="superhero" value="Batman">
+                Batman
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="superhero" value="Wonder Woman">
+                Wonder Woman
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit Your Survey!</button>
+        </form>
+      </div>
+    </div>
+    <div id="answers">
+      <h2>This is what I've learned about you!</h2>
+      <h4>Your name is <span class="name"></span>, you were born on <span class="born"></span>, your favorite color is <span class="color"></span>, your favorite food is <span class="food"></span>, and your favorite superhero is <span class="superhero"></span>!</h4>
+    </div>
+  </body>
+</html>
